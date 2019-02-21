@@ -39,9 +39,9 @@ Versija su vektoriais turi daugiau pataisymų ir neleidžia vartotojui įvesti n
 
 *v0.2 papildymas
 
--Pridėtas header failas
--Ištaisytos kai kurios klaidos
--Patobulintas įvedimas (mažiau galimybių "užlaužti programą"
+Pridėtas header failas
+Ištaisytos kai kurios klaidos
+Patobulintas įvedimas (mažiau galimybių "užlaužti programą"
 
 MINUSAI:
--netvarkingas ir ne optimalus kodas
+netvarkingas ir ne optimalus kodas
