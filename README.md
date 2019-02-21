@@ -36,3 +36,12 @@ Matas    Cenys    6.60
 2. Atlikta su vektoriais
 
 Versija su vektoriais turi daugiau pataisymų ir neleidžia vartotojui įvesti neteisingų duomenų
+
+*v0.2 papildymas
+
+-Pridėtas header failas
+-Ištaisytos kai kurios klaidos
+-Patobulintas įvedimas (mažiau galimybių "užlaužti programą"
+
+MINUSAI:
+-netvarkingas ir ne optimalus kodas
