@@ -42,6 +42,15 @@ Versija su vektoriais turi daugiau pataisymų ir neleidžia vartotojui įvesti n
 Pridėtas header failas
 Ištaisytos kai kurios klaidos
 Patobulintas įvedimas (mažiau galimybių "užlaužti programą"
+* Pridėta klaidingo failo apsauga
+* Tikrinami mokinių vardai ir pavardės
+* Žiūrima, ar mokinys turi daugiau nei vieną pažymį
+* Mokiniai gali turėti skirtingus kiekius pažymių
+
+Programa atpažįsta tekstinį failą TIK jeigu jo pirma eilutė atrodo štai taip:
+```shell
+Pavarde Vardas ND1 ND2 ND3 ND4 Egzaminas
+```
 
 MINUSAI:
 netvarkingas ir ne optimalus kodas
