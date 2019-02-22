@@ -54,3 +54,9 @@ Pavarde Vardas ND1 ND2 ND3 ND4 Egzaminas
 
 MINUSAI:
 netvarkingas ir ne optimalus kodas
+
+# v0.3 papildymas
+
+Pataisytas header failas
+Pridėtas funkcijų failas
+Pridėtas tikrinimas, ar pažymys nėra raidė
