@@ -80,4 +80,4 @@ Programos spartos analizė atlikta su release mode (paimti duomenys suapvalinti 
 |Išvedimas į 2 atskirus failus|0.007        s|0.053        s|0.532 s|5.486 s|55.86 s|
 |Visas veikimo laikas|0.021        s|0.149        s|1.456 s|14.59 s|150.7 s|
 
-Galimi neatitikimai su visu programos veikimo laiku, dėl duomenų apvalinimo arba dėl netinkamose vietose pradedamo matuoti laiko.
+Galimi neatitikimai su visu programos veikimo laiku dėl duomenų apvalinimo arba dėl netinkamose vietose pradedamo matuoti laiko.
