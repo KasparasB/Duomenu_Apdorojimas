@@ -57,6 +57,6 @@ netvarkingas ir ne optimalus kodas
 
 # v0.3 papildymas
 
-*Pataisytas header failas
-*Pridėtas funkcijų failas
-*Pridėtas tikrinimas, ar pažymys nėra raidė
+1. Pataisytas header failas
+2. Pridėtas funkcijų failas
+3. Pridėtas tikrinimas, ar pažymys nėra raidė
