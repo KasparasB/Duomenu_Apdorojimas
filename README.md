@@ -81,3 +81,33 @@ Programos spartos analizė atlikta su release mode (paimti duomenys suapvalinti 
 |Visas veikimo laikas|0.021        s|0.149        s|1.456 s|14.59 s|150.7 s|
 
 Galimi neatitikimai su visu programos veikimo laiku dėl duomenų apvalinimo arba dėl netinkamose vietose pradedamo matuoti laiko.
+
+# v0.5 papildymas
+
+
+### Vector
+
+|Funkcija                     |n = 100    |n = 1000     |n = 10000    |n = 100000   |n = 1000000 |
+|-----------------------------|----------|------------|------------|------------|-----------|
+|Duomenų sukūrimas |0.002 s|0.009 s|0.084 s|0.887 s|8.39 s|
+|Veiksmai atliekami su duomenimis|0 s|0.003 s|0.0037 s|0.038 s|3.81 s|
+|Gerų, blogų mokinių išvedimas|0.001       s|0.006         s|0.049 s|0.497 s|5.047 s|
+|Rezultato išvedimas |0.003        s|0.008        s|0.053 s|0.521 s|5.283 s|
+
+### List
+
+|Funkcija                     |n = 100    |n = 1000     |n = 10000    |n = 100000   |n = 1000000 |
+|-----------------------------|----------|------------|------------|------------|-----------|
+|Duomenų sukūrimas |0.001 s|0.009 s|0.09 s|0.883 s|8.538 s|
+|Veiksmai atliekami su duomenimis|0 s|0.004 s|0.043 s|0.447 s|4.391 s|
+|Gerų, blogų mokinių išvedimas|0.001       s|0.006         s|0.053 s|0.547 s|5.593 s|
+|Rezultato išvedimas |0.023        s|0.008        s|0.058 s|0.593 s|6.32 s|
+
+### Deque
+
+|Funkcija                     |n = 100    |n = 1000     |n = 10000    |n = 100000   |n = 1000000 |
+|-----------------------------|----------|------------|------------|------------|-----------|
+|Duomenų sukūrimas |0.001 s|0.009 s|0.096 s|0.965 s|8.817 s|
+|Veiksmai atliekami su duomenimis|0 s|0.004 s|0.0043 s|0.441 s|4.404 s|
+|Gerų, blogų mokinių išvedimas|0.001       s|0.006         s|0.051 s|0.51 s|5.165 s|
+|Rezultato išvedimas |0.003        s|0.008        s|0.059 s|0.585 s|5.95 s|
