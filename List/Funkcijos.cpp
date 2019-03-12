@@ -324,9 +324,13 @@ void geriBlogiMokiniai(list<Universitetas>& Studentas, int n, int Ilgiausias_Var
 	for (Universitetas A : geri)
 		out1 << left << setw(Ilgiausias_Vardas) << A.Vardas << " " << left << setw(Ilgiausia_Pavarde) << A.Pavarde << fixed << setprecision(2) << "  " << A.Galutinis << endl;
 
+	geri.clear();
+	
 	for (Universitetas A : blogi)
 		out2 << left << setw(Ilgiausias_Vardas) << A.Vardas << " " << left << setw(Ilgiausia_Pavarde) << A.Pavarde << fixed << setprecision(2) << "  " << A.Galutinis << endl;
 
+	blogi.clear();
+	
 	auto end = std::chrono::system_clock::now();
 	auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start) * 0.001;
 	std::cout << "Veiksmai su gerais, blogais mokiniais(isvedimas): " << setprecision(4) << elapsed.count() << '\n';
