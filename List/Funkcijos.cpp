@@ -3,7 +3,7 @@
 std::ifstream in;
 std::ofstream out;
 
-void DuomenuKurimas()
+void DuomenuKurimas(int DuomenuFailai)
 {
 	int n = 100;
 	int Skaicius2 = 0;
@@ -13,7 +13,7 @@ void DuomenuKurimas()
 
 	//std::uniform_int_distribution<> Pazymiams(2, 10);
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < DuomenuFailai; i++)
 	{
 		auto start = std::chrono::system_clock::now();
 
@@ -42,7 +42,6 @@ void DuomenuKurimas()
 		std::cout << "Kurimas: " << setprecision(4) << elapsed.count() << '\n';
 		out.close();
 	}
-
 }
 
 void Skaitymas(list<Universitetas>& Studentas, int & n, int Med_Vid, int TekstinioFailoNr)
@@ -202,6 +201,7 @@ bool Ivedimas()
 {
 	cout << "Skaiciuoti pagal mediana ar vidurki? (0 - Mediana, 1 - Vidurkis)" << endl;
 	string trap;
+	cin.ignore(80, '\n');
 	getline(cin, trap);
 	while (cin.fail() || (trap != "0" && trap != "1")) {
 		cout << "Klaida ivedime! Iveskite 0 arba 1." << endl;
@@ -325,7 +325,7 @@ void geriBlogiMokiniai(list<Universitetas>& Studentas, int n, int Ilgiausias_Var
 		out1 << left << setw(Ilgiausias_Vardas) << A.Vardas << " " << left << setw(Ilgiausia_Pavarde) << A.Pavarde << fixed << setprecision(2) << "  " << A.Galutinis << endl;
 
 	geri.clear();
-	
+
 	for (Universitetas A : blogi)
 		out2 << left << setw(Ilgiausias_Vardas) << A.Vardas << " " << left << setw(Ilgiausia_Pavarde) << A.Pavarde << fixed << setprecision(2) << "  " << A.Galutinis << endl;
 
@@ -338,7 +338,7 @@ void geriBlogiMokiniai(list<Universitetas>& Studentas, int n, int Ilgiausias_Var
 
 void Isvedimas(list<Universitetas>& Studentas, int Med_Vid, int n, int TekstinioFailoNr)
 {
-	
+	auto start = std::chrono::system_clock::now();
 	std::ofstream out("rezultatas" + std::to_string(TekstinioFailoNr) + ".txt");
 
 	string gal = " "; //Susikuriu stringa, kad galeciau ji naudoti apacioje
@@ -365,19 +365,15 @@ void Isvedimas(list<Universitetas>& Studentas, int Med_Vid, int n, int Tekstinio
 
 	geriBlogiMokiniai(Studentas, n, Ilgiausias_Vardas, Ilgiausia_Pavarde, TekstinioFailoNr);
 
-	
+	auto end = std::chrono::system_clock::now();
+	auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start) * 0.001;
+	std::cout << setprecision(4) << "Isvedimas: " << elapsed.count() << '\n';
 
-	auto start = std::chrono::system_clock::now();
-	
 	for(Universitetas A:Studentas)                    //for (int i = 0; i < n; i++)
 	{
 		out << left << setw(Ilgiausias_Vardas) << A.Vardas << " " << left << setw(Ilgiausia_Pavarde) << A.Pavarde << fixed << setprecision(2) << "  " << A.Galutinis << endl;
 	}
 
-	auto end = std::chrono::system_clock::now();
-	auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start) * 0.001;
-	std::cout << setprecision(4) << "Isvedimas: " << elapsed.count() << '\n';
-	
 	out.close();
 	Studentas.clear();
 

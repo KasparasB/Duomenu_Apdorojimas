@@ -39,7 +39,7 @@ struct Universitetas {
 	int Pazymiu_Skaicius;
 };
 
-void DuomenuKurimas();
+void DuomenuKurimas(int DuomenuFailai);
 void Ilgiausias(list<Universitetas>&A, int n, int &Vardas, int &Pavarde);
 bool Ivedimas();
 double Mediana(list<double> &Pazymiai, int e);
