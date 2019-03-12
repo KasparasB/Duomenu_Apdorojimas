@@ -320,7 +320,7 @@ void geriBlogiMokiniai(vector<Universitetas>& Studentas, int n, int Ilgiausias_V
 
 void Isvedimas(vector<Universitetas>& Studentas, int Med_Vid, int n, int TekstinioFailoNr)
 {
-	auto start = std::chrono::system_clock::now();
+	
 	std::ofstream out("rezultatas" + std::to_string(TekstinioFailoNr) + ".txt");
 
 	string gal = " "; //Susikuriu stringa, kad galeciau ji naudoti apacioje
@@ -345,15 +345,19 @@ void Isvedimas(vector<Universitetas>& Studentas, int Med_Vid, int n, int Tekstin
 
 	geriBlogiMokiniai(Studentas, n, Ilgiausias_Vardas, Ilgiausia_Pavarde,TekstinioFailoNr);
 
-	auto end = std::chrono::system_clock::now();
-	auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start) * 0.001;
-	std::cout << setprecision(4) << "Isvedimas: " << elapsed.count() << '\n';
+	
 
+	auto start = std::chrono::system_clock::now();
+	
 	for (int i = 0; i < n; i++)
 	{
 		out << left << setw(Ilgiausias_Vardas) << Studentas[i].Vardas << " " << left << setw(Ilgiausia_Pavarde) << Studentas[i].Pavarde << fixed << setprecision(2) << "  " << Studentas[i].Galutinis << endl;
 	}
-
+	
+	auto end = std::chrono::system_clock::now();
+	auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start) * 0.001;
+	std::cout << setprecision(4) << "Isvedimas: " << elapsed.count() << '\n';
+	
 	out.close();
 	Studentas.clear();
 	Studentas.shrink_to_fit();
