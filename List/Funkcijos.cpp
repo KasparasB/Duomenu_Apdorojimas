@@ -338,7 +338,7 @@ void geriBlogiMokiniai(list<Universitetas>& Studentas, int n, int Ilgiausias_Var
 
 void Isvedimas(list<Universitetas>& Studentas, int Med_Vid, int n, int TekstinioFailoNr)
 {
-	auto start = std::chrono::system_clock::now();
+	
 	std::ofstream out("rezultatas" + std::to_string(TekstinioFailoNr) + ".txt");
 
 	string gal = " "; //Susikuriu stringa, kad galeciau ji naudoti apacioje
@@ -365,15 +365,19 @@ void Isvedimas(list<Universitetas>& Studentas, int Med_Vid, int n, int Tekstinio
 
 	geriBlogiMokiniai(Studentas, n, Ilgiausias_Vardas, Ilgiausia_Pavarde, TekstinioFailoNr);
 
-	auto end = std::chrono::system_clock::now();
-	auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start) * 0.001;
-	std::cout << setprecision(4) << "Isvedimas: " << elapsed.count() << '\n';
+	
 
+	auto start = std::chrono::system_clock::now();
+	
 	for(Universitetas A:Studentas)                    //for (int i = 0; i < n; i++)
 	{
 		out << left << setw(Ilgiausias_Vardas) << A.Vardas << " " << left << setw(Ilgiausia_Pavarde) << A.Pavarde << fixed << setprecision(2) << "  " << A.Galutinis << endl;
 	}
 
+	auto end = std::chrono::system_clock::now();
+	auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start) * 0.001;
+	std::cout << setprecision(4) << "Isvedimas: " << elapsed.count() << '\n';
+	
 	out.close();
 	Studentas.clear();
 
