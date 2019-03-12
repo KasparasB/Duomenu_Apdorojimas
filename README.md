@@ -108,3 +108,5 @@ Galimi neatitikimai su visu programos veikimo laiku dėl duomenų apvalinimo arb
 |Veiksmai atliekami su duomenimis|0 s|0.004 s|0.0043 s|0.441 s|4.404 s|
 |Gerų, blogų mokinių išvedimas|0.001       s|0.006         s|0.051 s|0.51 s|5.165 s|
 |Rezultato išvedimas |0.003        s|0.008        s|0.059 s|0.585 s|5.95 s|
+
+Duomenū faile nėra duomenų su 1 000 000 vardų ir pavardžių, nes didesnio nei 25MB failo github neleidžia įkelti.
