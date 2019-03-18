@@ -110,3 +110,33 @@ Galimi neatitikimai su visu programos veikimo laiku dėl duomenų apvalinimo arb
 |Rezultato išvedimas |0.003        s|0.008        s|0.059 s|0.585 s|5.95 s|
 
 Duomenų faile nėra duomenų su 1 000 000 vardų ir pavardžių, nes didesnio nei 25MB failo github neleidžia įkelti.
+
+# v1.0 papildymas
+
+Pirmos strategijos rezultatai čia nepateikti, nes pasirodo, kad visos mano programos buvo parašytas su pirma strategija, todėl jos rezultatus galima pamatyti v0.5
+
+ANTRA STRATEGIJA
+
+### Vector
+
+|Funkcija                     |n = 100    |n = 1000     |n = 10000    |n = 100000   |n = 1000000 |
+|-----------------------------|----------|------------|------------|------------|-----------|
+|Veiksmai atliekami su duomenimis|0 s|0.003 s|0.0036 s|0.037 s|3.742 s|
+|Gerų, blogų mokinių išvedimas|0.002       s|0.005         s|0.051 s|0.508 s|5.096 s|
+|Rezultato išvedimas |0.003        s|0.007        s|0.054 s|0.525 s|5.252 s|
+
+### List
+
+|Funkcija                     |n = 100    |n = 1000     |n = 10000    |n = 100000   |n = 1000000 |
+|-----------------------------|----------|------------|------------|------------|-----------|
+|Veiksmai atliekami su duomenimis|0 s|0.004 s|0.041 s|0.418 s|4.286 s|
+|Gerų, blogų mokinių išvedimas|0.001       s|0.005         s|0.052 s|0.549 s|5.552 s|
+|Rezultato išvedimas |0.002        s|0.007        s|0.055 s|0.575 s|6.105 s|
+
+### Deque
+
+|Funkcija                     |n = 100    |n = 1000     |n = 10000    |n = 100000   |n = 1000000 |
+|-----------------------------|----------|------------|------------|------------|-----------|
+|Veiksmai atliekami su duomenimis|0 s|0.004 s|0.043 s|0.428 s|4.33 s|
+|Gerų, blogų mokinių išvedimas|0.002       s|0.005         s|0.052 s|0.531 s|5.113 s|
+|Rezultato išvedimas |0.003        s|0.007        s|0.058 s|0.588 s|5.749 s|
