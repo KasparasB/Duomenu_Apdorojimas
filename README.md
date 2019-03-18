@@ -115,7 +115,7 @@ Duomenų faile nėra duomenų su 1 000 000 vardų ir pavardžių, nes didesnio n
 
 Pirmos strategijos rezultatai čia nepateikti, nes pasirodo, kad visos mano programos buvo parašytas su pirma strategija, todėl jos rezultatus galima pamatyti v0.5
 
-ANTRA STRATEGIJA
+##ANTRA STRATEGIJA
 
 ### Vector
 
