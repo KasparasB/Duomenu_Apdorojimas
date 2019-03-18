@@ -140,3 +140,5 @@ ANTRA STRATEGIJA
 |Veiksmai atliekami su duomenimis|0 s|0.004 s|0.043 s|0.428 s|4.33 s|
 |Gerų, blogų mokinių išvedimas|0.002       s|0.005         s|0.052 s|0.531 s|5.113 s|
 |Rezultato išvedimas |0.003        s|0.007        s|0.058 s|0.588 s|5.749 s|
+
+Logiška, jog su antra strategija programa veikia greičiau, nes kompiuteriui tenka susidoroti su mažesniai duomenų kiekiais, mažiau skaičiuoti ir išvedinėti
