@@ -37,7 +37,7 @@ Matas    Cenys    6.60
 
 Versija su vektoriais turi daugiau pataisymų ir neleidžia vartotojui įvesti neteisingų duomenų
 
-# v0.2 papildymas
+# [v0.2](https://github.com/KasparasB/Duomenu_Apdorojimas/releases/tag/v0.2) papildymas
 
 Pridėtas header failas
 Ištaisytos kai kurios klaidos
@@ -55,14 +55,14 @@ Pavarde Vardas ND1 ND2 ND3 ND4 Egzaminas
 MINUSAI:
 netvarkingas ir ne optimalus kodas
 
-# v0.3 papildymas
+# [v0.3](https://github.com/KasparasB/Duomenu_Apdorojimas/releases/tag/v0.3) papildymas
 
 1. Pataisytas header failas
 2. Pridėtas funkcijų failas
 3. Pridėtas tikrinimas, ar pažymys nėra raidė
 
 
-# v0.4 papildymas
+# [v0.4](https://github.com/KasparasB/Duomenu_Apdorojimas/releases/tag/v0.4) papildymas
 
 Programos metu yra sukuriami 5 .txt failai (sudaryti iš: 1000, 10000, 100000, 1000000, 10000000 įrašų). Nebenaudojama funkcija tikrinti vardus ir pavardes, nes kuriami šabloniniai vardai su skaičiais.
 
@@ -82,7 +82,7 @@ Programos spartos analizė atlikta su release mode (paimti duomenys suapvalinti 
 
 Galimi neatitikimai su visu programos veikimo laiku dėl duomenų apvalinimo arba dėl netinkamose vietose pradedamo matuoti laiko.
 
-# v0.5 papildymas
+# [v0.5](https://github.com/KasparasB/Duomenu_Apdorojimas/releases/tag/v0.5) papildymas
 
 
 ### Vector
@@ -111,7 +111,7 @@ Galimi neatitikimai su visu programos veikimo laiku dėl duomenų apvalinimo arb
 
 Duomenų faile nėra duomenų su 1 000 000 vardų ir pavardžių, nes didesnio nei 25MB failo github neleidžia įkelti.
 
-# v1.0 papildymas
+# [v1.0](https://github.com/KasparasB/Duomenu_Apdorojimas/releases/tag/v1.0) papildymas
 
 Pirmos strategijos rezultatai čia nepateikti, nes pasirodo, kad visos mano programos buvo parašytas su pirma strategija, todėl jos rezultatus galima pamatyti v0.5
 
@@ -156,7 +156,7 @@ Taip pat  panaudojau **std::search()** algoritmą, kuris padeda greičiau surast
 
 ## Programos paleidimas
 
-v1.0 versiją galima pasileisti:
+**v1.0 versiją galima pasileisti:**
 
 1. Nusiklonavus repozitoriją
 2. makefile įkėlus į norimą folderį (deque, vector, list)
