@@ -116,7 +116,7 @@ Duomenų faile nėra duomenų su 1 000 000 vardų ir pavardžių, nes didesnio n
 
 ## [v1.0](https://github.com/KasparasB/Duomenu_Apdorojimas/releases/tag/v1.0) papildymas
 
-Pirmos strategijos rezultatai čia nepateikti, nes pasirodo, kad visos mano programos buvo parašytas su pirma strategija, todėl jos rezultatus galima pamatyti v0.5
+Pirmos strategijos rezultatai čia nepateikti, nes pasirodo, kad visos mano programos buvo parašytos su pirma strategija, todėl jos rezultatus galima pamatyti v0.5
 
 ## ANTRA STRATEGIJA
 
