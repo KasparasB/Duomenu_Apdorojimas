@@ -153,3 +153,14 @@ Taip pat  panaudojau **std::search()** algoritmą, kuris padeda greičiau surast
 |Gerų, blogų mokinių išvedimas|0.001       s|0.005         s|0.05 s|0.502 s|5.043 s|
 |Rezultato išvedimas |0.002        s|0.007        s|0.053 s|0.519 s|5.201 s|
 
+
+## Programos paleidimas
+
+v1.0 versiją galima pasileisti:
+
+1. Nusiklonavus repozitoriją
+2. Makefile įkėlus į norimą pasileisti folderį (deque, vector, list)
+3. Per cmd atsidarius tą folderį ir parašius make ir po to ./main
+4. Išvalyti visus duomenis su make clean
+
+
