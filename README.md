@@ -141,4 +141,15 @@ Pirmos strategijos rezultatai čia nepateikti, nes pasirodo, kad visos mano prog
 |Gerų, blogų mokinių išvedimas|0.002       s|0.005         s|0.052 s|0.531 s|5.113 s|
 |Rezultato išvedimas |0.003        s|0.007        s|0.058 s|0.588 s|5.749 s|
 
-Logiška, jog su antra strategija programa veikia greičiau, nes kompiuteriui tenka susidoroti su mažesniai duomenų kiekiais, mažiau skaičiuoti ir išvedinėti
+Logiška, jog su antra strategija programa veikia greičiau, nes kompiuteriui tenka susidoroti su mažesniais duomenų kiekiais, mažiau skaičiuoti ir išvedinėti.
+
+Taip pat  panaudojau **std::search()** algoritmą, kuris padeda greičiau surasti narį, nuo kurio prasideda galutiniai įverčiai mažesni nei 5.
+
+### Vector su std::search()
+
+|Funkcija                     |n = 100    |n = 1000     |n = 10000    |n = 100000   |n = 1000000 |
+|-----------------------------|----------|------------|------------|------------|-----------|
+|Veiksmai atliekami su duomenimis|0 s|0.003 s|0.0036 s|0.0369 s|3.709 s|
+|Gerų, blogų mokinių išvedimas|0.001       s|0.005         s|0.05 s|0.502 s|5.043 s|
+|Rezultato išvedimas |0.002        s|0.007        s|0.053 s|0.519 s|5.201 s|
+
