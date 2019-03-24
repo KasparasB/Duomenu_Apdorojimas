@@ -159,8 +159,8 @@ Taip pat  panaudojau **std::search()** algoritmą, kuris padeda greičiau surast
 v1.0 versiją galima pasileisti:
 
 1. Nusiklonavus repozitoriją
-2. Makefile įkėlus į norimą pasileisti folderį (deque, vector, list)
-3. Per cmd atsidarius tą folderį ir parašius make ir po to ./main
-4. Išvalyti visus duomenis su make clean
+2. makefile įkėlus į norimą folderį (deque, vector, list)
+3. Per cmd atsidarius tą folderį ir parašius **make** ir po to **./main**
+4. Išvalyti visus duomenis su make **clean**
 
 
